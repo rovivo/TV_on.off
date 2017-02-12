@@ -95,6 +95,7 @@ void loop() {
   if (LBOXON == HIGH && LBOXOFF == HIGH)
   {
       previousMillis = currentMillis;
+      digitalWrite (WarnLED, LOW);
   }
   else  //if not pressed any button, check if time is up
   {
